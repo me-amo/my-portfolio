@@ -33,22 +33,27 @@
 }
 .home-container {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: content;
+  justify-content: space-between;
   gap: 60px;
 }
 .home-image {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home-content {
   flex: 1;
 }
 .passport {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 50%;
   background-color: white;
+  border: 3px solid #64ffda;
 }
 .name {
   font-size: 3.5rem;
