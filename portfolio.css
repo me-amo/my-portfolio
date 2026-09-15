@@ -106,14 +106,41 @@
   padding: 25px;
   border-radius: 10px;
   border: 1px solid;
+  width: 230px;
 }
 .who-i-am h3 {
   color: green;
+  text-align: center;
 }
 .progression {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+.past-experience,
+.current-experience,
+.future-prospects {
+  font-size: 18px;
+  font-weight: bold;
+  color: aquamarine;
+}
+.what-i-bring {
+  background-color: #112240;
+  padding: 25px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 230px;
+  height: 380px;
+  text-align: center;
+}
+.what-i-bring h3 {
+  color: green;
+  text-align: center;
+}
+.what-i-bring ul {
+  font-size: 16px;
+  color: aquamarine;
+  line-height: 1.8;
 }
 .key-skills {
   color: white;
