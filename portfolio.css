@@ -84,38 +84,46 @@
 }
 .about-section {
   padding: 50px 40px;
+  margin-left: 70px;
 }
 #About h2 {
   font-size: 32px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  text-align: center;
+  max-width: 900px;
 }
 .about-description {
+  font-size: 18px;
   color: #8892b0;
-  line-height: 1.8;
+  line-height: 1.6;
   max-width: 750px;
+  margin-bottom: 45px;
 }
 .about-content {
   display: flex;
-  gap: 40px;
-  justify-content: space-between;
+  gap: 2rem;
+  justify-content: flex-start;
   align-items: flex-start;
 }
-.who-i-am {
+.journey-thus-far {
   background-color: #112240;
-  padding: 25px;
   border-radius: 10px;
-  border: 1px solid;
+  border: 1px solid #8892b0;
   width: 230px;
-}
-.who-i-am h3 {
-  color: green;
   text-align: center;
-}
-.progression {
+  min-height: 380px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-top: 0;
+  align-self: flex-start;
+}
+.journey-thus-far h3 {
+  color: green;
   text-align: center;
+  margin-bottom: 15px;
+  margin-top: 0;
 }
 .past-experience,
 .current-experience,
@@ -123,32 +131,61 @@
   font-size: 18px;
   font-weight: bold;
   color: aquamarine;
+  line-height: 1.4;
 }
-.what-i-bring {
-  background-color: #112240;
-  padding: 25px;
-  border: 1px solid;
-  border-radius: 10px;
-  width: 230px;
-  height: 380px;
-  /* text-align: center; */
+.about-text {
+  max-width: 750px;
 }
-.what-i-bring h3 {
-  color: green;
-  text-align: center;
-}
-.what-i-bring ul {
-  font-size: 16px;
-  color: aquamarine;
-  line-height: 1.8;
-  list-style: none;
-}
+
 .key-skills {
   color: white;
 }
 .skills {
-  padding: 80px 10%;
+  padding: 70px;
   margin-bottom: 30px;
+  margin-top: 15px;
+}
+.skills h3 {
+  text-align: center;
+  font-size: 32px;
+}
+.skill-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.skill-card {
+  background-color: #112240;
+  padding: 25px;
+  border: 1px solid;
+  border-radius: 20px;
+  transition: 0.3s ease;
+  padding-top: 0;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.skill-card h4 {
+  color: rgb(14, 79, 79);
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.skill-card p {
+  color: #8892b0;
+  font-size: 15px;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.skill-card button {
+  background-color: rgb(17, 115, 115);
+  border: 1px solid rgb(3, 39, 4);
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 10px;
+  margin: 5px;
 }
 #experience {
   border: 1px solid green;
