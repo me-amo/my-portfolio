@@ -187,42 +187,113 @@
   padding: 10px;
   margin: 5px;
 }
-#experience {
-  border: 1px solid green;
+#projects {
   padding: 20px;
-  border-radius: 8px;
+}
+#projects h3 {
+  text-align: center;
+}
+.project-card {
+  background-color: #112240;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  margin-top: 0;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.projects-cards h4 {
+  color: rgb(14, 79, 79);
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.projects-cards p {
+  color: #8892b0;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+.projects-cards button {
+  background-color: rgb(14, 79, 79);
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+.project-tech {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.projects-cards .progress {
+  font-size: 16px;
+  color: #0a192f;
+  font-weight: bold;
+  border: 1px solid green;
+  background-color: #64ffda;
+  border-radius: 25px;
+  max-width: 110px;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+#experience {
+  padding: 60px 20px;
+  text-align: center;
 }
 .experience-container {
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 .experience-card {
-  padding: 20px;
-  border: 1px solid green;
-  border-radius: 8px;
-  width: 80%;
-  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid rgb(125, 133, 125);
+  border-radius: 10px;
   background-color: #112240;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  width: 50%;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: 10%;
+  transition: 0.3s ease;
+  text-align: center;
+}
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 .experience-card h4 {
-  color: white;
+  color: #64ffda;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 .experience-card .company {
+  color: white;
   font-weight: bold;
   margin-bottom: 5px;
 }
 .experience-card .date {
-  font-size: 14px;
-  color: green;
+  font-size: 13px;
+  color: #8892b0;
+  font-style: italic;
 }
 .experience-card .description {
   margin-top: 15px;
+  line-height: 1.5;
 }
 .experience-card ul {
   margin-top: 15px;
@@ -230,14 +301,7 @@
 .experience-card li {
   margin-bottom: 8px;
 }
-#projects {
-  border: 1px solid green;
-  margin-top: 30px;
-  border-radius: 8px;
-  padding: 20px;
-  max-width: 600px;
-  background-color: #112240;
-}
+
 #certifications {
   border: 1px solid green;
   margin-top: 30px;
